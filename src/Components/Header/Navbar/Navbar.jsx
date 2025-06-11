@@ -205,7 +205,46 @@ const Navbar = () => {
     <NavLink to="/" className={({ isActive }) => isActive ? "NavbarActive" : "navItem"}>{t('home')}</NavLink>
         <Link to="about" smooth={true} duration={500} className={isHiddenPage ? "None" : "navItem"}>{t('about_us')}</Link>
 
-        <div className="dropdown">
+
+        <div>
+          <h3>{t('std')}</h3>
+          <button
+                className="country-button"
+                onClick={() => navigate("/study-turkey")}
+              >
+                {t("std_turkey")}
+              </button>
+              <button
+                className="country-button"
+                onClick={() => navigate("/study-italy")}
+              >
+                {t("std_italy")}
+              </button>
+              <button
+                className="country-button"
+                onClick={() => navigate("/study-china")}
+              >
+                {t("std_china")}
+          </button>
+        </div>
+
+        <div>
+          <h3>{t("universities")}</h3>
+          {countries.map(country => {
+                const translatedName = countryTranslations[country.name]?.[i18n.language] || country.name;
+                return (
+                  <button
+                    key={country.id}
+                    onClick={() => handleCountryClick(country.name)}
+                    className="country-button"
+                  >
+                    {translatedName}
+                  </button>
+                );
+            })}
+        </div>
+
+        {/* <div className="dropdown">
           <div className="dropdown-hover-area">
             <span className="dropdown-title">
               <NavLink to="/universities" className={({ isActive }) => isActive ? "NavbarActive" : "navItem"}>{t("universities")}</NavLink>
@@ -226,7 +265,7 @@ const Navbar = () => {
               })}
             </div>
           </div>
-        </div>
+        </div> */}
 
         </div>
       )}
