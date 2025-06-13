@@ -9,39 +9,39 @@ import { useTranslation } from 'react-i18next';
 const games = [
   {
     contry: 'Turkiya',
-    title: 'Istanbul Gelişim Universiteti',
-    redirect: '/universities/university/Istanbul Gelişim Universiteti',
-    image: 'https://levelupconsulting.uz/media/media/universities/uni1.jpg',
+    title: 'Istanbul Kadir Has Universiteti',
+    redirect: '/universities/university/Istanbul Kadir Has Universiteti',
+    image: '/images/universities/m2.jpg',
   },
   {
     contry: 'Turkiya',
     title: 'Istanbul Kent Universiteti',
     redirect: '/universities/university/Istanbul Kent Universiteti',
-    image: '/images/UniversitiesPic/uni2.jpeg',
+    image: '/images/universities/m1.jpg',
   },
   {
     contry: 'Turkiya',
     title: 'Antalya Bilim Universiteti',
     redirect: '/universities/university/Antalya Bilim Universiteti',
-    image: '/images/UniversitiesPic/uni3.jpg',
+    image: '/images/universities/m3.jpg',
   },
   {
     contry: 'Turkiya',
-    title: 'Istanbul Kadir Has Universiteti',
-    redirect: '/universities/university/Istanbul Kadir Has Universiteti',
-    image: 'https://levelupconsulting.uz/media/media/universities/uni2.jpg',
+    title: 'Istanbul Medipol Universiteti',
+    redirect: '/universities/university/Istanbul Medipol Universiteti',
+    image: '/images/universities/m7.jpg',
   },
   {
     contry: 'Turkiya',
     title: 'Istanbul Topkapi Universiteti',
     redirect: '/universities/university/Istanbul Topkapi Universiteti',
-    image: '/images/UniversitiesPic/uni5.jpg',
+    image: '/images/universities/m12.jpg',
   },
   {
     contry: 'Turkiya',
-    title: 'Halic Universiteti',
-    redirect: '/universities/university/Halic Universiteti',
-    image: 'https://levelupconsulting.uz/media/media/universities/uni3_8hxyg54.jpg',
+    title: 'Istanbul Nişantaşı Universiteti',
+    redirect: '/universities/university/Istanbul Nişantaşı Universiteti',
+    image: '/images/universities/m10.jpg',
   },
 ];
 

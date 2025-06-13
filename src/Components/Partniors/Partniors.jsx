@@ -6,27 +6,27 @@ import { useTranslation } from 'react-i18next';
 const partners = [
   {
     name: "",
-    img: "/images/PrtsLogo/prts1.webp"
+    img: "/images/PrtsLogo/lo1.png"
   },
   {
     name: "",
-    img: "/images/PrtsLogo/prts3.png"
+    img: "/images/PrtsLogo/lo2.png"
   },
   {
     name: "",
-    img: "/images/PrtsLogo/srhic-logo-orange.svg"
+    img: "/images/PrtsLogo/lo3.jpg"
   },
   {
     name: "",
-    img: "/UniPrtsLevelUP/prts4.png"
+    img: "/images/PrtsLogo/Medipol-university-logo.png"
   },
   {
     name: "",
-    img: "/UniPrtsLevelUP/prts5.webp"
+    img: "/images/PrtsLogo/lo5.png"
   },
   {
     name: "",
-    img: "/UniPrtsLevelUP/prts6.webp"
+    img: "/images/PrtsLogo/lo6.png"
   },
 ];
 

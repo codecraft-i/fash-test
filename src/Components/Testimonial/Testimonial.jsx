@@ -5,35 +5,39 @@ import "./Testimonial.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+import { useTranslation } from 'react-i18next';
+
 const testimonials = [
   {
-    name: "Shixnazar Botirov",
-    text: 'FASH EDU menga orzu qilgan universitetimga kirishda katta yordam berdi. Ularning maslahatlari aniq, samarali va har bir bosqichda qo‘llab-quvvatlashdi. O‘zimga ishonch paydo bo‘ldi!',
-    image: "/Students/std1.JPG",
+    name: "Ozozbek Allaberdiev",
+    text: 'FASH EDU menga orzu qilgan universitetga kirishda katta ko‘mak berdi. Ularning tavsiyalari aniq va samarali bo‘lib, har bir bosqichda meni qo‘llab-quvvatlashdi. Bu jarayonda o‘zimga bo‘lgan ishonchim oshdi!',
+    image: "/Students/std01.png",
   },
   {
-    name: "Nazarbek Boltobayev",
-    text: 'Avvaliga juda ko‘p chalkashliklar bo‘lgan, qayerdan boshlashni bilmasdim. FASH EDU jamoasi birinchi uchrashuvdan boshlab yo‘nalish berdi, hamma hujjat ishlarini ham to‘g‘ri qilib berishdi. Ajoyib xizmat!',
-    image: "/Students/std2.JPG",
+    name: "Farangiz Ulasheva",
+    text: 'Men ulardan shunchaki maslahat kutgan edim, ammo ular yordamida kutganimdan ham yaxshiroq universitetga o‘qishga kirdim. Haqiqiy mutaxassislar jamoasi!',
+    image: "/Students/std02.png",
   },
   {
-    name: "Nafisa Polatova",
-    text: 'Men bu firmadan shunchaki maslahat kutgan edim, lekin ular menga hohlaganimdan ham yaxshi universitetga kirishimga yordam berishdi. Haqiqatdan ham o‘z ishining ustalari!',
-    image: "/Students/std3.png",
+    name: "Sotimboy Ruzimetov",
+    text: 'Dastlab qayerdan boshlashni bilmay, juda ko‘p savollarim bor edi. FASH EDU jamoasi ilk suhbatdayoq aniq yo‘l-yo‘riq ko‘rsatdi va hujjat ishlarini to‘g‘ri tashkil qilib berishdi. Juda mamnunman!',
+    image: "/Students/std01.png",
   },
   {
-    name: "Rahmanov Isfandiyor",
-    text: 'FASH EDU menga nafaqat universitet tanlashda, balki til imtihonlariga tayyorgarlikda ham katta yordam berdi. Har bir maslahat foydali va o‘rinli edi. Bunday xizmat uchun minnatdorman.',
-    image: "/Students/std4.png",
+    name: "Manizha Tukhsabaeva",
+    text: 'Men bir nechta firmalarni ko‘rib chiqdim, lekin FASH EDU eng jiddiy va professional yondashuvni namoyish etdi. Har bir mijozga alohida e’tibor qaratiladi. Ular bilan ishlaganim to‘g‘ri tanlov bo‘ldi.',
+    image: "/Students/std02.png",
   },
   {
-    name: "Karimova Nafosat",
-    text: 'Men bir necha firmalarni ko‘rib chiqdim, lekin FASH EDU eng professional yondashuvni taklif qildi. Har bir mijozga individual e’tibor berishadi. Ular bilan ishlash men uchun to‘g‘ri qaror bo‘ldi.',
-    image: "/Students/std5.png",
+    name: "Sherzod Shermatov",
+    text: 'FASH EDU nafaqat universitet tanlash, balki til imtihonlariga tayyorgarlikda ham katta yordam ko‘rsatdi. Har bir maslahat foydali va kerakli bo‘ldi. Ular xizmatidan juda minnatdorman.',
+    image: "/Students/std01.png",
   },
 ];
 
 const Testimonial = () => {
+  const { t, i18n } = useTranslation();
+
         const settings = {
         dots: true,
         arrows: true,
@@ -48,8 +52,8 @@ const Testimonial = () => {
     };
 
   return (
-    <div className="slider-wrapper">
-      <h2 className="slider-title">O'QUVCHILARIMIZ</h2>
+    <div className="slider-wrapper" id="thoughts">
+      <h2 className="slider-title" style={{ textTransform: "uppercase" }}>{t('students')}</h2>
       <Slider {...settings}>
         {testimonials.map((item, index) => (
           <div className="slide-item" key={index}>

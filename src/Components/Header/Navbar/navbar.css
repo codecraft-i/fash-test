@@ -85,6 +85,13 @@
     font-weight: 800;
     font-family: "Kumbh Sans", sans-serif !important;
     font-style: normal;
+    overflow: hidden;
+}
+
+.logo > a > img {
+  width: 75px;
+  height: auto;
+  background-size: cover;
 }
 
 .logo-main {

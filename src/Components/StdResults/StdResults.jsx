@@ -11,7 +11,7 @@ function StdResults({ visa, name }) {
   const { t, i18n } = useTranslation();
 
   return (
-    <>
+    <div id="results">
       <div
         className="visa-card"
         style={{ backgroundImage: `url(${bg})` }}
@@ -29,7 +29,7 @@ function StdResults({ visa, name }) {
           </div>
         </div>
       )}
-    </>
+    </div>
   );
 }
 

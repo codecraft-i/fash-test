@@ -127,5 +127,11 @@
     "std": "Study Programs",
     "std_turkey": "Education in Turkey",
     "std_italy": "Education in Italy",
-    "std_china": "Education in China"
+    "std_china": "Education in China",
+
+    "results": "Results",
+    "thoughts": "Thoughts",
+
+    "students": "Students",
+    "countries": "Countries"
 }

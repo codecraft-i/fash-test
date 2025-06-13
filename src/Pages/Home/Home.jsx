@@ -36,7 +36,6 @@ import ImageSlider from '@components/ImageSlider/ImageSlider'
 const imageList = [
   "./std3.png",
   "./std2.jpg",
-  "./std2.jpg",
 ];
 
 // Icons
@@ -144,8 +143,6 @@ const Home = () => {
               <About />
               <Partniors />
 
-              <Testimonial />
-
                 <div className="app-container">
                   <h1 className="title" style={{ color: "#eee" }}>{t('spring_2025_semester_results')}</h1>
                   <div className="card-grid">
@@ -154,6 +151,8 @@ const Home = () => {
                     ))}
                   </div>
                 </div>
+
+              <Testimonial />
               
               <ContactSection />
               <div className='baseContactSendingBox'>

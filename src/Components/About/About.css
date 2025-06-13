@@ -19,7 +19,7 @@
 .author-section::after {
   content: "";
   position: absolute;
-  background-color: #000000;
+  background-color: #141e46;
   /* opacity: 0.8; */
   z-index: 0;
   border-radius: 50%;
@@ -120,7 +120,7 @@
 }
 
 .author-image {
-  width: 50%;
+  width: 200px;
   height: auto;
   background-size: cover;
   /* object-fit: cover; */
@@ -189,5 +189,10 @@
     height: 50px;
     top: 10px;
     right: 10px;
+  }
+
+  .author-image {
+    width: 140px;
+    height: auto;
   }
 }

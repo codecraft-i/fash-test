@@ -131,5 +131,11 @@
 
     "std_turkey": "Turkiyada ta'lim",
     "std_italy": "Italiyada ta'lim",
-    "std_china": "Xitoyda ta'lim"
+    "std_china": "Xitoyda ta'lim",
+
+    "results" : "Natijalar",
+    "thoughts" : "Fikrlar",
+
+    "students": "O'QUVCHILARIMIZ",
+    "countries": "DAVLATLAR"
 }

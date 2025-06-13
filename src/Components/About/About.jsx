@@ -16,8 +16,7 @@ const About = () => {
         {/* Kontent */}
         <div className="author-container">
           <div className="author-image-wrapper">
-            {/* <img src="/LOGO.png" alt="Logo" className="author-image" /> */}
-            <span><span className="at-logo-item1">FASH</span><span className="at-logo-item2">EDU</span></span>
+            <img src="/logo.png" alt="Logo" className="author-image" />
           </div>
           <div className="author-text">
             {/* <h5 className="author-subtitle">{t('stf_consulting_founder')}</h5> */}

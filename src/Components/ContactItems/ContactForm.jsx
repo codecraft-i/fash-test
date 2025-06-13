@@ -16,7 +16,7 @@ const ContactForm = () => {
   const [error, setError] = useState("");
 
   useEffect(() => {
-    axios.get("https://levelupconsulting.uz/site/api/certificates/")
+    axios.get("https://fashedu.com/site/api/certificates/")
       .then((res) => setCertificates(res.data))
       .catch((err) => console.error("Certificate load error", err));
   }, []);
@@ -34,7 +34,7 @@ const ContactForm = () => {
     setError("");
     const csrfToken = document.cookie.split(';').find(c => c.trim().startsWith('csrftoken=')).split('=')[1];
     try {
-      const res = await axios.post("https://levelupconsulting.uz/site/api/contact/",
+      const res = await axios.post("https://fashedu.com/site/api/contact/",
       formData,
       {
         headers: {

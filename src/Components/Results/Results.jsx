@@ -11,7 +11,6 @@ const Results = () => {
   const stats = [
     { value: "2500+", description: t('study_international') },
     { value: "6+", description: t('std_2') },
-    { value: "$1 mln", description: t('std_3') },
     { value: "100%", description: t('std_4') },
   ];
 

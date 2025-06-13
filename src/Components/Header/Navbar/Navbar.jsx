@@ -12,6 +12,7 @@ import axios from "axios";
 import { useTranslation } from 'react-i18next';
 import { countryTranslations } from "../../../translations/countryTranslations";
 
+import Logo from "/logo.png";
 
 // Style files
 import "./navbar.css";
@@ -37,7 +38,7 @@ const Navbar = () => {
   };
 
   useEffect(() => {
-    axios.get("https://levelupconsulting.uz/site/api/countries/")
+    axios.get("https://fashedu.com/site/api/countries/")
       .then(response => setCountries(response.data))
       .catch(error => console.error("Error fetching countries:", error));
   }, []);
@@ -82,7 +83,7 @@ const Navbar = () => {
         {/* <div className="logo"><NavLink to="/">FASH EDU</NavLink></div> */}
         <div className="logo">
           <NavLink to="/">
-            <span className="logo-main" style={{ margin: "0 5px 0 0" }}>FASH</span><span className="logo-highlight">EDU</span>
+            <img src={ Logo } alt="Logo" />
           </NavLink>
         </div>
 
@@ -243,29 +244,6 @@ const Navbar = () => {
                 );
             })}
         </div>
-
-        {/* <div className="dropdown">
-          <div className="dropdown-hover-area">
-            <span className="dropdown-title">
-              <NavLink to="/universities" className={({ isActive }) => isActive ? "NavbarActive" : "navItem"}>{t("universities")}</NavLink>
-              <span className="arrow">▼</span>
-            </span>
-            <div className="dropdown-content">
-              {countries.map(country => {
-                const translatedName = countryTranslations[country.name]?.[i18n.language] || country.name;
-                return (
-                  <button
-                    key={country.id}
-                    onClick={() => handleCountryClick(country.name)}
-                    className="country-button"
-                  >
-                    {translatedName}
-                  </button>
-                );
-              })}
-            </div>
-          </div>
-        </div> */}
 
         </div>
       )}

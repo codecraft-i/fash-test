@@ -57,17 +57,58 @@
 }
 
 .office p {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .office a {
   color: #00aaff;
   text-decoration: none;
+  font-weight: 500;
 }
 
 .office a:hover {
   text-decoration: underline;
 }
+
+
+.office {
+  flex: 1 1 300px;
+  min-width: 300px;
+  max-width: 100%;
+  background-color: #f9f9f9;
+  padding: 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  border-left: 5px solid #3498db;
+}
+
+.office:hover {
+  transform: translateY(-5px);
+}
+
+.office h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #2c3e50;
+}
+
+.office p {
+  margin-bottom: 12px;
+  font-size: 16px;
+  color: #333;
+}
+
+.office a {
+  color: #0077cc;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.office a:hover {
+  text-decoration: underline;
+}
+
+
 
 /* Responsive */
 @media (max-width: 768px) {
